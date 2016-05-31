@@ -1,0 +1,5 @@
+G:\login\login\login\bin\login.dll.config
+G:\login\login\login\bin\login.dll
+G:\login\login\login\bin\login.pdb
+G:\login\login\login\obj\Debug\login.dll
+G:\login\login\login\obj\Debug\login.pdb
