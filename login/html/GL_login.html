@@ -41,26 +41,26 @@
         {
             var ID = document.getElementById("ID").value;
             var Password = document.getElementById("Password").value;
-            ajax("GL_login.ashx?ID=" + ID + "&Password=" + Password, function (resText)
+            ajax("../handler/GL_login.ashx?ID=" + ID + "&Password=" + Password, function (resText)
             {
                 if (resText == "error_ID")
                 {
-                    alert("用户名输入错误");
+                    alert("用户名输入错误！");
                 }
-                else if (resText == "error")
+                else if (resText == "error_Pwd")
                 {
-                    alert("密码输入错误");
+                    alert("密码输入错误！");
                 }
-                else
+                else if(resText=="right")
                 {
-                    window.location.href = "../Sign_in.ashx?id="+ID+"&password="+Password;
+                    window.location.href = "../handler/Sign_in.ashx?id=" + ID + "&password=" + Password;
                 }
             });
         }
     </script>
 </head>
 <body>
-    <form action="GL_login.ashx" method="post">
+    <form action="../hander/login.ashx" method="post">
         <dl class="admin_login">
             <dt>
                 <strong>这是一个很漂亮的登陆页面</strong>
@@ -70,7 +70,7 @@
                 <input type="text" placeholder="账号" class="login_txtbx" id="ID" />
             </dd>
             <dd class="pwd_icon">
-                <input type="password" placeholder="密码" class="login_txtbx" id="Password" />
+                <input type="password" placeholder="密码" class="login_txtbx" id="Password"  />
             </dd>
             <!--<dd class="val_icon">
                 <div class="checkcode">

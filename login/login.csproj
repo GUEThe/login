@@ -57,19 +57,44 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="APP_Data\MyText.mdf" />
+    <Content Include="APP_Data\MyText_log.ldf" />
+    <Content Include="html\all_detail.html" />
+    <Content Include="html\login.aspx" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery1.js" />
     <Content Include="js\Particleground.js" />
     <Content Include="css\style2.css" />
     <Content Include="js\ajax.js" />
     <Content Include="html\GL_login.html" />
+    <Content Include="css\style.css" />
     <Content Include="js\verificationNumbers.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="code\SqlHelper.cs" />
+    <Compile Include="handler\GL_login.ashx.cs">
+      <DependentUpon>GL_login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\login.ashx.cs">
+      <DependentUpon>login.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handler\Sign_in.ashx.cs">
+      <DependentUpon>Sign_in.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="html\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="handler\login.ashx" />
+    <Content Include="handler\Sign_in.ashx" />
+    <Content Include="handler\GL_login.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,9 +102,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="hander\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

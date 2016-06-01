@@ -1,0 +1,165 @@
+#loginbox{
+    background: url(../images/LoginBox.png) no-repeat;
+    width: 450px;
+    height: 273px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#indexform{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 111px;
+}
+.idInput{
+    height: 27px;
+}
+.btn{
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 6px;
+    width: 70px;
+    height: 30px;
+    margin-left: 38px;
+    margin-top: 18px;
+}
+#container{
+    width: 860px;
+    margin: 0 auto;
+}
+#top{
+    width:100%;
+    height:186px;
+}
+#clock{
+    background: url(../images/circle.png) no-repeat;
+    width:300px;
+    height:186px;
+    float: left;
+}
+#clock h2{
+    padding-top: 64px;
+    margin-left: 52px;
+}
+.clock1{
+    color: red;
+    font-size: 35px;
+    margin-left: 57px;
+    margin-top: -7px;
+}
+.clock2{
+    color: red;
+    font-size: 35px;
+    float: left;
+    text-align: left;
+    margin-top: 106px;
+}
+.redTitle{
+    color: #000;
+    font-size: 27px;
+    font-weight: bold;
+    float: left;
+    margin-top: 109px;
+    margin-left: 40px;
+}
+#content{
+    width: 100%;
+    height: auto;
+    min-height:600px;
+    padding-bottom: 30px;
+    padding-right: 17px;
+    background: #5e8cb7;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: -2px;
+}
+#TableTitle p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    float: left;
+}
+.p1{
+    margin-left: -274px;
+}
+.p2{
+    margin-left: 197px;
+}
+.checkAll{
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    margin-left: 14px;
+}
+.checkAll:hover{
+    color: darkred;
+}
+#table_left,
+#table_right{
+    margin-left: 26px;
+    border-spacing: 3px;
+    float: left;
+}
+#table_right{
+    margin-left: 33px;
+}
+#table_left tr th,
+#table_right tr th{
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    color: #fff;
+}
+#table_left tr td,
+#table_right tr td{
+    text-align: center;
+    background: #fff;
+    padding: 5px;
+	/*position:absolute;*/
+}
+.t1{
+    width: 40px;
+}
+.t2{
+    width: 160px;
+}
+.t3{
+    width: 120px;
+}
+/*.singal2{
+	position:absolute;
+	right:3px;
+	}
+.singal1{
+	position:absolute;
+	right:96px;
+	}*/
+.none{
+	background: none; !important;
+	}
+#listBox{
+    width: 660px;
+    margin: 0 auto;
+}
+#inputBox{
+    width: 158px;
+    margin: 0 auto;
+}
+#listBox input{
+    width: 75px;
+    height: 30px;
+    border: 1px solid #5e8cb7;
+    background: #5e8cb7;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+#Container{
+    background: #5e8cb7;
+    width: 683px;
+    height: auto;
+    border: 1px solid #5e8cb7;
+    border-radius: 15px;
+    margin-top: 15px;
+	padding-bottom: 25px;
+}
