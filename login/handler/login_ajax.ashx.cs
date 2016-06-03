@@ -1,4 +1,4 @@
-﻿using Helpers;
+﻿using SqlHelpers;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -32,9 +32,15 @@ namespace WebApplication.login
                 {
                     context.Response.Write("error_Pwd");
                 }
+                else if(count_2==1)
+                {
+                    context.Response.SetCookie(new HttpCookie("id",ID.ToString()));
+                    context.Response.SetCookie(new HttpCookie("password", Password.ToString()));
+                    context.Response.Write("right");
+                }
                 else
                 {
-                    context.Response.Write("right");
+                    context.Response.Write("unknow_error");
                 }
             }
         }

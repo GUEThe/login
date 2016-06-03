@@ -41,7 +41,7 @@
         {
             var ID = document.getElementById("ID").value;
             var Password = document.getElementById("Password").value;
-            ajax("../handler/GL_login.ashx?ID=" + ID + "&Password=" + Password, function (resText)
+            ajax("../handler/login_ajax.ashx?ID=" + ID + "&Password=" + Password, function (resText)
             {
                 if (resText == "error_ID")
                 {
@@ -53,14 +53,22 @@
                 }
                 else if(resText=="right")
                 {
-                    window.location.href = "../handler/Sign_in.ashx?id=" + ID + "&password=" + Password;
+                    window.location.href = "../web_forms/login_success.aspx";
+                }
+                else if (resText == "unknow_error")
+                {
+                    alert("未知错误！");
+                }
+                else
+                {
+                    alert("一般处理程序出错！");
                 }
             });
         }
     </script>
 </head>
 <body>
-    <form action="../hander/login.ashx" method="post">
+    <form action="../handler/login_ajax.ashx" method="post">
         <dl class="admin_login">
             <dt>
                 <strong>这是一个很漂亮的登陆页面</strong>
@@ -70,7 +78,7 @@
                 <input type="text" placeholder="账号" class="login_txtbx" id="ID" />
             </dd>
             <dd class="pwd_icon">
-                <input type="password" placeholder="密码" class="login_txtbx" id="Password"  />
+                <input type="password" placeholder="密码" class="login_txtbx" id="Password" />
             </dd>
             <!--<dd class="val_icon">
                 <div class="checkcode">
