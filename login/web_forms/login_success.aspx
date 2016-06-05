@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login_success.aspx.cs" Inherits="login.html.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login_success.aspx.cs" Inherits="login.html.login" %>
 
 <!DOCTYPE html>
 
@@ -7,7 +7,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="../css/style.css" type="text/css" rel="stylesheet"/>
     <title></title>
-    <script src="../js/ajax.js"></script>
+    <script>
+        function admin() {
+            window.location.href = "Admin.aspx";
+        }
+    </script>
+    <%--<script src="../js/ajax.js"></script>
     <script type="text/javascript">
         function check() {
             ajax("../handler/admin_ajax.ashx", function (resText) {
@@ -25,7 +30,7 @@
                 }
             });
         }
-    </script>
+    </script>--%>
 </head>
 <body>
     <div id="listBox"><center>
@@ -54,8 +59,9 @@
         </div>
         </center>
         <div id="inputBox">
-            <input type="button" name="btnLeft" value="返回登录" onclick="window.location.href = '../html/login.html';"/>
-            <input type="button" name="btnLeft" value="启用管理员身份" onclick="check()"/>
+            <input type="button" name="btnLeft" value="返回登录" onclick="window.location.href = '../html/Login.html';"/><br />
+            <%=admin_btn %>
+           <%-- <input type="button" name="btnLeft" value="启用管理员身份" onclick="check()"/>--%>
            <%-- <input type="button" name="btnRight" value="修改资料" onclick="window.location.href = 'modifier.aspx';"/><br />
            <center><input type="button" name="btnRight" value="注销个人帐号" onclick="window.location.href = 'del_myself.aspx';"/></center><br />--%>
         </div>

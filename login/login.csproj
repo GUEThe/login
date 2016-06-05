@@ -59,50 +59,41 @@
   <ItemGroup>
     <Content Include="APP_Data\login.mdf" />
     <Content Include="APP_Data\login_log.ldf" />
-    <Content Include="html\all_detail.html" />
-    <Content Include="web_forms\admin.aspx" />
-    <Content Include="web_forms\login_success.aspx" />
+    <Content Include="web_forms\Admin.aspx" />
+    <Content Include="web_forms\Login_success.aspx" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery1.js" />
     <Content Include="js\Particleground.js" />
     <Content Include="css\style2.css" />
     <Content Include="js\ajax.js" />
-    <Content Include="html\login.html" />
+    <Content Include="html\Login.html" />
     <Content Include="css\style.css" />
     <Content Include="js\verificationNumbers.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="code\SqlHelper.cs" />
-    <Compile Include="handler\admin_ajax.ashx.cs">
-      <DependentUpon>admin_ajax.ashx</DependentUpon>
+    <Compile Include="handler\Login_ajax.ashx.cs">
+      <DependentUpon>Login_ajax.ashx</DependentUpon>
     </Compile>
-    <Compile Include="handler\login_ajax.ashx.cs">
-      <DependentUpon>login_ajax.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="handler\Sign_in.ashx.cs">
-      <DependentUpon>Sign_in.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="web_forms\admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="web_forms\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="web_forms\admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
+    <Compile Include="web_forms\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="web_forms\login_success.aspx.cs">
-      <DependentUpon>login_success.aspx</DependentUpon>
+    <Compile Include="web_forms\Login_success.aspx.cs">
+      <DependentUpon>Login_success.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="web_forms\login_success.aspx.designer.cs">
-      <DependentUpon>login_success.aspx</DependentUpon>
+    <Compile Include="web_forms\Login_success.aspx.designer.cs">
+      <DependentUpon>Login_success.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="handler\Sign_in.ashx" />
-    <Content Include="handler\login_ajax.ashx" />
-    <Content Include="handler\admin_ajax.ashx" />
+    <Content Include="handler\Login_ajax.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

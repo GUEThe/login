@@ -41,7 +41,7 @@
         {
             var ID = document.getElementById("ID").value;
             var Password = document.getElementById("Password").value;
-            ajax("../handler/login_ajax.ashx?ID=" + ID + "&Password=" + Password, function (resText)
+            ajax("../handler/Login_ajax.ashx?ID=" + ID + "&Password=" + Password, function (resText)
             {
                 if (resText == "error_ID")
                 {
@@ -53,7 +53,7 @@
                 }
                 else if(resText=="right")
                 {
-                    window.location.href = "../web_forms/login_success.aspx";
+                    window.location.href = "../web_forms/Login_success.aspx";
                 }
                 else if (resText == "unknow_error")
                 {
